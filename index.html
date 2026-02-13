@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pet Parenting - Relaunching Soon</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 25px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.08);
+  padding: 60px 40px;
+  text-align: center;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+  font-size: 3rem;
+  color: #ff6b6b;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.highlight {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  color: #666;
+}
+
+/* Dogs Section */
+.dogs {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 50px 0 30px;
+  flex-wrap: wrap;
+}
+
+.dogs img {
+  width: 220px;
+  border-radius: 20px;
+  transition: transform 0.4s ease;
+}
+
+.dogs img:hover {
+  transform: scale(1.05);
+}
+
+/* Gifts Section */
+.gifts {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.gift-box {
+  text-align: center;
+}
+
+.gift-box img {
+  width: 80px;
+  transition: transform 0.3s ease;
+}
+
+.gift-box img:hover {
+  transform: rotate(-8deg) scale(1.1);
+}
+
+.gift-box p {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #444;
+}
+
+.footer {
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  h1 { font-size: 2.2rem; }
+  .subtitle { font-size: 1.4rem; }
+  .dogs img { width: 160px; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Pet Parenting</h1>
+  <div class="subtitle">Relaunching Soon!</div>
+  <div class="highlight">Exciting gifts for our Paw Buddies</div>
+
+  <!-- Dog Images -->
+  <div class="dogs">
+    <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16" alt="Happy Dog">
+    <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1" alt="Cute Puppy">
+  </div>
+
+  <!-- Gift Icons -->
+  <div class="gifts">
+    <div class="gift-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/4213/4213958.png" alt="Gift">
+      <p>Special Treats</p>
+    </div>
+    <div class="gift-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/4213/4213958.png" alt="Gift">
+      <p>Surprise Toys</p>
+    </div>
+    <div class="gift-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/4213/4213958.png" alt="Gift">
+      <p>Exclusive Offers</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    © 2026 Pet Parenting. All rights reserved.
+  </div>
+</div>
+
+</body>
+</html>
